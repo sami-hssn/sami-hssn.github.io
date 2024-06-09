@@ -1,0 +1,340 @@
+@import url("https://fonts.google.com/share?selection.family=Lora:ital,wght@0,400..700;1,400..700");
+@import url("https://fonts.google.com/share?selection.family=Open+Sans:ital,wght@0,300..800;1,300..800");
+@import url("https://fonts.google.com/share?selection.family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900");
+
+
+.navbar-brand img{
+    height: 8rem;
+    max-width: 145px;
+}
+
+.navbar{
+    color: white;
+    background-color: #415A77;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Lora';
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 100px;
+}
+
+.nav-bar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid #78A1BB;
+    padding: 25px 0px 15px 0px;
+}
+
+.navbar-collapse {
+    width: calc( 100% - 20px);
+}
+
+.nav-item {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex: 1 1 0px;
+    margin: 0px 10px;
+}
+
+.nav-item a {
+    border-radius: 25px;
+    display: block;
+    width: 100%;
+}
+
+.nav-link{
+    color: white;
+    border-bottom: 4px solid transparent;
+}
+
+.nav-cta-btn {
+    display: block;
+    flex-grow: 1;
+    background-color: #BFDBF7;
+}
+
+.nav-item .nav-link.active,
+.nav-link:hover{
+    background-color: #78A1BB;
+    border-radius: 25px;
+    color: white !important;
+}
+
+.mobile-nav .nav-item .nav-link.active,
+.mobile-nav .nav-link:hover {
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+
+.mobile-nav .nav-link {
+    padding: 5px 20px;
+}
+
+.mobile-nav {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+}
+
+.mobile-nav .nav-bar-container {
+    height: 100%;
+    padding: 15px 0px;
+    flex-direction: column !important;
+}
+
+.mobile-nav-close-btn {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.mobile-nav .navbar-brand {
+    padding-bottom: 15px;
+}
+
+.mobile-nav a {
+    color: black;
+}
+
+img{
+    border-color: #415A77!important;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid;
+    max-width: 100%;
+}
+
+hr{
+    width: 90%;
+    border-color: #78A1BB!important;
+    border: 3px solid;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #E1E5F2;
+    align-items: center;
+}
+
+.spacing-1>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem* calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem* var(--tw-space-y-reverse)); 
+}
+
+
+h1, .customh1{
+    font-size: 64px;
+    font-family: 'Lora', serif;
+    color: #415A77;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.specialh1{
+    background-color: #415A77; 
+	color:white!important;
+    width:100vw; 
+    margin-left: calc(50% - 50vw);
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:64px;
+}
+
+h2, .customh2{
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif ;
+    color: #78A1BB!important;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h3, .customh3{
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: #BFDBF7;
+    font-family: 'Lora', serif; 
+    color: #415A77; 
+    font-weight: bold; 
+    font-size: 32px;
+    width: 300px;
+    line-height: 1.5em;
+    border: none; 
+    text-align: center; 
+    padding: 10px 20px;
+    display: inline-block; 
+    margin: 10px 0;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #78A1BB; /* Custom hover color */
+}
+
+footer{
+    background-color: #383838;
+    padding: 1rem 2rem 3rem;
+    width:100vw; 
+    margin-left: calc(50% - 50vw);
+}
+
+footer img{
+    height: auto;
+    margin: 1.5rem auto;
+}
+
+.container-foot img{
+    height: 8rem;
+    text-align: center;
+}
+
+.circle-img-container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    margin-bottom: 20px; /* Space between each image-text pair */
+    flex-wrap: nowrap;
+}
+
+.container .circle-img-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.container .circle-img-container:nth-child(even) .text-content {
+    padding-left: 50px;
+}
+
+.container .circle-img-container:nth-child(odd) .text-content {
+    padding-right: 50px;
+}
+
+.circle-img {
+    width: 375px; /* Adjust the size as needed */
+    height: 375px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image a circle */
+    overflow: hidden; /* Ensures the image fits within the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.circle-img img {
+    width: 100%;
+    height: auto;
+    border: none; /* Remove any borders from the image */
+}
+
+.text-content {
+    flex: 1; /* Allows the text to take up remaining space */
+    width: calc(100% - 170px);
+}
+
+.img-container {
+    width: calc(50% - 25px); /* Adjust the size as needed */
+    height: 400px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+    border: 5px solid #415A77!important; /* Apply border from your existing CSS */
+    border-radius: 25px;
+}
+.prices {
+    height: 100%;
+    border: 2px solid #78A1BB;
+    border-radius: 10px;
+    background-color: #E1E5F2;
+    transition: transform 0.3s;
+    min-height: 300px; /* Ensure all rectangles are at least this height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prices:hover {
+    transform: scale(1.05);
+}
+
+.prices ul {
+    padding-left: 0;
+}
+
+.prices li {
+    margin: 10px 0;
+}
+
+.text1{
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    color: #000000;
+    margin: 0;
+    max-width: 100%;
+}
+
+.text2{
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    color: #828282;
+    margin: 0;
+    max-width: 100%;
+}
+
+.container-foot{
+    font-family: 'Merriweather', sans-serif;
+    color: #FFFF;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFF;
+    padding: 15px;
+}
+
+a:hover{
+    color: #78A1BB;
+}
+
+.container-foot p{
+    padding-top: 20px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .nav-bar-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
