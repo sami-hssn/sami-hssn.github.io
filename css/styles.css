@@ -137,6 +137,7 @@ hr{
 body{
     background-color: #E1E5F2;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .spacing-1>:not([hidden])~:not([hidden]) {
@@ -336,5 +337,12 @@ a:hover{
     .nav-bar-container {
         display: flex;
         flex-direction: row;
+    }
+    .circle-img-container{
+        flex-direction: column !important;
+    }
+    .img-container, .text-content{
+        width: 100%;
+        padding: 0px !important;
     }
 }
