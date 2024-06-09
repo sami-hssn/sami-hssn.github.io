@@ -341,6 +341,9 @@ a:hover{
     .circle-img-container{
         flex-direction: column !important;
     }
+    .circle-img{
+        margin-right: 0px !important;
+    }
     .img-container, .text-content{
         width: 100%;
         padding: 0px !important;
